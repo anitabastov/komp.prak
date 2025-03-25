@@ -2,7 +2,7 @@ import math
 
 def find_L(V, alpha, tol=1e-6):
     g = 9.81
-    L, new_L = 0, 0
+    L, LL = 0, 0
 
     while True:
         LL = (V**2 * math.sin(2 * alpha)) / g
