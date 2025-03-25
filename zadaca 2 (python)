@@ -5,10 +5,10 @@ def find_L(V, alpha, tol=1e-6):
     L, new_L = 0, 0
 
     while True:
-        new_L = (V**2 * math.sin(2 * alpha)) / g
-        if abs(new_L - L) < tol:
+        LL = (V**2 * math.sin(2 * alpha)) / g
+        if abs(LL - L) < tol:
             break
-        L = new_L
+        L = LL
     
     return L
 
